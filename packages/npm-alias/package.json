@@ -1,13 +1,13 @@
 {
   "name": "@richiechoo/npm-alias",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "provide frequently used npm alias ",
   "keywords": [
     "npm",
     "alias"
   ],
   "bin": {
-    "ra":"./lib/npm-alias.js",
+    "ra": "./lib/npm-alias.js",
     "ni": "npm install",
     "nu": "npm update",
     "nup": "npm run update",
