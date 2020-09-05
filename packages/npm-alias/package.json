@@ -1,19 +1,19 @@
 {
   "name": "@richie/npm-alias",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "provide frequently used npm alias ",
   "keywords": [
     "npm",
     "alias"
   ],
-  "bin":{
-    "ni":"npm install",
-    "nu":"npm update",
-    "nup":"npm run update",
-    "nd":"npm run dev",
-    "ns":"npm run serve",
-    "nus":"rm -rf node_modules/.cache && npm install && npm update && npm run serve",
-    "nub":"rm -rf node_modules/.cache && npm install && npm update && npm run build"
+  "bin": {
+    "ni": "npm install",
+    "nu": "npm update",
+    "nup": "npm run update",
+    "nd": "npm run dev",
+    "ns": "npm run serve",
+    "nus": "rm -rf node_modules/.cache && npm install && npm update && npm run serve",
+    "nub": "rm -rf node_modules/.cache && npm install && npm update && npm run build"
   },
   "author": "RichieChoo <richiechoo1993@gmail.com>",
   "homepage": "https://github.com/RichieChoo/richie#readme",
