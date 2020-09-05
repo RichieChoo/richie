@@ -15,7 +15,7 @@
     "nus": "rm -rf node_modules/.cache && npm install && npm update && npm run serve",
     "nub": "rm -rf node_modules/.cache && npm install && npm update && npm run build"
   },
-  "author": "RichieChoo <richiechoo1993@gmail.com>",
+  "author": "richiechoo1993 <richiechoo1993@gmail.com>",
   "homepage": "https://github.com/RichieChoo/richie#readme",
   "license": "MIT",
   "main": "lib/npm-alias.js",
@@ -40,5 +40,5 @@
   "bugs": {
     "url": "https://github.com/RichieChoo/richie/issues"
   },
-  "gitHead": "9990711f9887a32138621ec8dcf2a1435ec25335"
+  "gitHead": "550c7a827d31f5510f44b4bf627cccf7aa8812a6"
 }
