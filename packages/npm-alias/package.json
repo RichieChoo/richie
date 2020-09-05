@@ -1,5 +1,5 @@
 {
-  "name": "@richie/npm-alias",
+  "name": "@richiechoo/npm-alias",
   "version": "0.1.0",
   "description": "provide frequently used npm alias ",
   "keywords": [
@@ -7,6 +7,7 @@
     "alias"
   ],
   "bin": {
+    "ra":"./lib/npm-alias.js",
     "ni": "npm install",
     "nu": "npm update",
     "nup": "npm run update",
@@ -15,7 +16,7 @@
     "nus": "rm -rf node_modules/.cache && npm install && npm update && npm run serve",
     "nub": "rm -rf node_modules/.cache && npm install && npm update && npm run build"
   },
-  "author": "richiechoo1993 <richiechoo1993@gmail.com>",
+  "author": "richiechoo1993",
   "homepage": "https://github.com/RichieChoo/richie#readme",
   "license": "MIT",
   "main": "lib/npm-alias.js",
@@ -40,5 +41,8 @@
   "bugs": {
     "url": "https://github.com/RichieChoo/richie/issues"
   },
-  "gitHead": "550c7a827d31f5510f44b4bf627cccf7aa8812a6"
+  "gitHead": "d3379ac304cc9d5e1fec6c758035d56135b5f403",
+  "dependencies": {
+    "commander": "^6.1.0"
+  }
 }
