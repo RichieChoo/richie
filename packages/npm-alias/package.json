@@ -27,7 +27,8 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -39,5 +40,5 @@
   "bugs": {
     "url": "https://github.com/RichieChoo/richie/issues"
   },
-  "gitHead": "fb303ac530633bdb609a2d2102a42049039c6345"
+  "gitHead": "9990711f9887a32138621ec8dcf2a1435ec25335"
 }
