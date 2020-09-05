@@ -7,6 +7,7 @@
     "lerna:publish": "lerna publish"
   },
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "lerna": "^3.22.1",
+    "prettier": "^2.1.1"
   }
 }
