@@ -7,14 +7,7 @@
     "alias"
   ],
   "bin": {
-    "ra": "./lib/npm-alias.js",
-    "ni": "npm install",
-    "nu": "npm update",
-    "nup": "npm run update",
-    "nd": "npm run dev",
-    "ns": "npm run serve",
-    "nus": "rm -rf node_modules/.cache && npm install && npm update && npm run serve",
-    "nub": "rm -rf node_modules/.cache && npm install && npm update && npm run build"
+    "ra": "./lib/npm-alias.js"
   },
   "author": "richiechoo1993",
   "homepage": "https://github.com/RichieChoo/richie#readme",
