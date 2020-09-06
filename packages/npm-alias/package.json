@@ -36,16 +36,17 @@
 		"url": "git+https://github.com/RichieChoo/richie.git"
 	},
 	"scripts": {
-		"test": "echo \"Error: run tests from root\" && exit 1"
+		"test": "cross-env Development=true node lib/npm-alias.js ra"
 	},
 	"bugs": {
 		"url": "https://github.com/RichieChoo/richie/issues"
 	},
 	"gitHead": "d3379ac304cc9d5e1fec6c758035d56135b5f403",
 	"dependencies": {
-		"commander": "^6.1.0"
+		"commander": "^6.1.0",
+		"inquirer": "^7.3.3"
 	},
-	"devDependencies": {
-		"prettier": "^2.1.1"
+	"peerDependencies": {
+		"rimraf": "^3.0.2"
 	}
 }

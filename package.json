@@ -1,13 +1,14 @@
 {
-  "name": "root",
-  "private": true,
-  "scripts": {
-    "lerna:clean": "lerna clean -y",
-    "lerna:boot": "lerna bootstrap",
-    "lerna:publish": "lerna publish"
-  },
-  "devDependencies": {
-    "lerna": "^3.22.1",
-    "prettier": "^2.1.1"
-  }
+	"name": "root",
+	"private": true,
+	"scripts": {
+		"lerna:clean": "lerna clean -y",
+		"lerna:boot": "lerna bootstrap",
+		"lerna:publish": "lerna publish"
+	},
+	"devDependencies": {
+		"lerna": "^3.22.1",
+		"prettier": "^2.1.1",
+		"cross-env": "^7.0.2"
+	}
 }

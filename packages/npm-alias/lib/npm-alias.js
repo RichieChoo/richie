@@ -1,61 +1,51 @@
 #!/usr/bin/env node
 const package = require('../package.json');
-const spawn = require('./spawn');
+const spawn = require('../utils/spawn');
 const commander = require('commander');
-const os = require('os');
+const inquirer = require('inquirer');
 const path = require('path');
-
+const configAlias = require("../config/alias.json")
 const first = path.basename(process.argv[1])
 
-const isRf = os.type() === 'Darwin' || os.type() === 'Linux';
 const program = new commander.Command();
-const defaultAlias = {
-    ni: 'npm install',
-    nu: 'npm update',
-    nup: 'npm run update',
-    nd: 'npm run dev',
-    ns: 'npm run serve',
-    rc: isRf ? 'rm -rf node_modules/.cache' : 'rimraf node_modules/.cache',
-    nus: 'npm install && npm update && npm run serve',
-    nub: 'npm install && npm update && npm run build',
-};
-
-const needClean = (key) => ['nus', 'nub'].includes(key);
-const getBash = (alias) =>
-    needClean(alias)
-        ? defaultAlias.rc + ' && ' + defaultAlias[alias]
-        : defaultAlias[alias];
-
-if (first === 'ra') {
+if (first === 'ra' || process.env.Development) {
     program
         .version(package.version, `-v, version`)
-        .description('provide frequently used npm alias ')
-        .arguments('<alias> [options]')
-        .action((alias, options) => {
-            if (defaultAlias[alias]) {
-                const bash = getBash(alias);
-                console.log(`npm-alias receive "${alias}" : ${bash}`);
-                spawn(bash, alias);
-            } else {
-                console.log(`npm-alias "${alias}" is not exits !`);
-            }
+        .command("config")
+        .description(`config ${package.name} setting`)
+        .action(() => {
+            console.log("开发中...")
         })
-        .on('--help', function () {
-            const str = Object.keys(defaultAlias)
-                .map((key) => {
-                    if (key !== 'rc') {
-                        const itemStr = `  ${key}`.padEnd(15, ' ');
-                        const valStr = getBash(key);
-                        return itemStr + valStr + '\n';
-                    }
-                })
-                .filter(Boolean)
-                .join('');
-            console.log(str);
-        });
+
+    program.command("add-alias")
+        .description(`set custom aliases for ${package.name}`)
+        .action(() => {
+            console.log("add-alias开发中...")
+        })
+
+    program.command("reset-alias")
+        .description(`reset current aliases for ${package.name}`)
+        .option('--revert-all', 'Remove sauce')
+        .action(opts => {
+            console.log(opts)
+            console.log("reset-alias开发中...")
+        })
+
+    program.on('--help', function () {
+        const str = Object.keys(configAlias)
+            .map((key) => {
+                const itemStr = `  ${key}`.padEnd(18, ' ');
+                const valStr = configAlias[key];
+                return itemStr + valStr + '\n';
+            })
+            .join('');
+        console.log(str);
+    });
+
+
     program.parse(process.argv);
-} else if (defaultAlias[first]) {
-    const bash = getBash(first);
+} else if (configAlias[first]) {
+    const bash = configAlias[first];
     console.log(`npm-alias receive "${first}" : ${bash}`);
     spawn(bash, alias);
 }
