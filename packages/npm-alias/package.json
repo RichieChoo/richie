@@ -1,41 +1,51 @@
 {
-  "name": "@richiechoo/npm-alias",
-  "version": "0.4.0",
-  "description": "provide frequently used npm alias",
-  "keywords": [
-    "npm",
-    "alias"
-  ],
-  "bin": {
-    "ra": "./lib/npm-alias.js"
-  },
-  "author": "richiechoo1993",
-  "homepage": "https://github.com/RichieChoo/richie#readme",
-  "license": "MIT",
-  "main": "lib/npm-alias.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RichieChoo/richie.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
-  "bugs": {
-    "url": "https://github.com/RichieChoo/richie/issues"
-  },
-  "gitHead": "d3379ac304cc9d5e1fec6c758035d56135b5f403",
-  "dependencies": {
-    "commander": "^6.1.0"
-  }
+	"name": "@richiechoo/npm-alias",
+	"version": "0.4.0",
+	"description": "provide frequently used npm alias",
+	"keywords": [
+		"npm",
+		"alias"
+	],
+	"bin": {
+		"ra": "./lib/npm-alias.js",
+		"ni": "./lib/npm-alias.js",
+		"nu": "./lib/npm-alias.js",
+		"nup": "./lib/npm-alias.js",
+		"nd": "./lib/npm-alias.js",
+		"ns": "./lib/npm-alias.js",
+		"nus": "./lib/npm-alias.js",
+		"nub": "./lib/npm-alias.js"
+	},
+	"author": "richiechoo1993",
+	"homepage": "https://github.com/RichieChoo/richie#readme",
+	"license": "MIT",
+	"main": "lib/npm-alias.js",
+	"directories": {
+		"lib": "lib",
+		"test": "__tests__"
+	},
+	"files": [
+		"lib"
+	],
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/RichieChoo/richie.git"
+	},
+	"scripts": {
+		"test": "echo \"Error: run tests from root\" && exit 1"
+	},
+	"bugs": {
+		"url": "https://github.com/RichieChoo/richie/issues"
+	},
+	"gitHead": "d3379ac304cc9d5e1fec6c758035d56135b5f403",
+	"dependencies": {
+		"commander": "^6.1.0"
+	},
+	"devDependencies": {
+		"prettier": "^2.1.1"
+	}
 }

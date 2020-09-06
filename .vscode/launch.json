@@ -12,7 +12,7 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/packages/npm-alias/lib/npm-alias.js",
-            "args": ["-a","ni"]
+            "args": ["ni"]
         }
     ]
 }
