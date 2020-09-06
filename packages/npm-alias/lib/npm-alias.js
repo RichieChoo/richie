@@ -47,6 +47,6 @@ if (first === 'ra' || process.env.Development) {
 } else if (configAlias[first]) {
     const bash = configAlias[first];
     console.log(`npm-alias receive "${first}" : ${bash}`);
-    spawn(bash, alias);
+    spawn(bash, first);
 }
 
