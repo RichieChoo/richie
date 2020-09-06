@@ -24,9 +24,6 @@
 		"lib": "lib",
 		"test": "__tests__"
 	},
-	"files": [
-		"lib"
-	],
 	"publishConfig": {
 		"registry": "https://registry.npmjs.org/",
 		"access": "public"
