@@ -8,7 +8,7 @@
 	],
 	"bin": {
 		"ra": "./lib/npm-alias.js",
-		"ni": "./lib/npm-alias.js ni",
+		"ni": "./lib/npm-alias.js",
 		"nu": "./lib/npm-alias.js",
 		"nup": "./lib/npm-alias.js",
 		"nd": "./lib/npm-alias.js",

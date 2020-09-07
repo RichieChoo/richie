@@ -1,11 +1,12 @@
 # `@richiechoo/npm-alias`
 
-> TODO: description
-
-## Usage
-
+## Install
+### npm
+```bash
+npm i @richiechoo/npm-alias -g
 ```
-const npmAlias = require('@richiechoo/npm-alias');
 
-// TODO: DEMONSTRATE API
+### yarn
+```bash
+yarn global add @richiechoo/npm-alias
 ```
