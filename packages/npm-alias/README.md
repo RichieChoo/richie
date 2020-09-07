@@ -1,11 +1,11 @@
-# `@richie/npm-alias`
+# `@richiechoo/npm-alias`
 
 > TODO: description
 
 ## Usage
 
 ```
-const npmAlias = require('@richie/npm-alias');
+const npmAlias = require('@richiechoo/npm-alias');
 
 // TODO: DEMONSTRATE API
 ```

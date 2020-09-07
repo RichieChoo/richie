@@ -2,6 +2,6 @@
 
 const npmAlias = require('..');
 
-describe('@richie/npm-alias', () => {
+describe('@richiechoo/npm-alias', () => {
     it('needs tests');
 });

@@ -17,7 +17,7 @@
 		"nub": "./lib/npm-alias.js"
 	},
 	"author": "richiechoo1993",
-	"homepage": "https://github.com/RichieChoo/richie#readme",
+	"homepage": "https://github.com/RichieChoo/richiechoo#readme",
 	"license": "MIT",
 	"main": "lib/npm-alias.js",
 	"directories": {
@@ -30,13 +30,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/RichieChoo/richie.git"
+		"url": "git+https://github.com/RichieChoo/richiechoo.git"
 	},
 	"scripts": {
-		"test": "cross-env Development=true node lib/npm-alias.js ra"
+		"test": "cross-env Development=true node lib/npm-alias.js ra",
+		"postinstall": "node ./scripts/install.js"
 	},
 	"bugs": {
-		"url": "https://github.com/RichieChoo/richie/issues"
+		"url": "https://github.com/RichieChoo/richiechoo/issues"
 	},
 	"gitHead": "d3379ac304cc9d5e1fec6c758035d56135b5f403",
 	"dependencies": {
