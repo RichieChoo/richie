@@ -1,6 +1,6 @@
 {
 	"name": "@richiechoo/npm-alias",
-	"version": "0.5.4",
+	"version": "0.5.5",
 	"description": "provide frequently used npm alias",
 	"keywords": [
 		"npm",
