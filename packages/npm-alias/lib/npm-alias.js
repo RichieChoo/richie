@@ -6,7 +6,7 @@ const inquirer = require('inquirer');
 const path = require('path');
 const configAlias = require("../config/alias.json")
 const first = path.basename(process.argv[1])
-
+console.warn('first',first);
 const program = new commander.Command();
 if (first === 'ra' || process.env.Development) {
     program

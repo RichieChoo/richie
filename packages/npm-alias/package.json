@@ -1,6 +1,6 @@
 {
 	"name": "@richiechoo/npm-alias",
-	"version": "0.5.2",
+	"version": "0.5.2-fix",
 	"description": "provide frequently used npm alias",
 	"keywords": [
 		"npm",
@@ -8,7 +8,7 @@
 	],
 	"bin": {
 		"ra": "./lib/npm-alias.js",
-		"ni": "./lib/npm-alias.js",
+		"ni": "./lib/npm-alias.js ni",
 		"nu": "./lib/npm-alias.js",
 		"nup": "./lib/npm-alias.js",
 		"nd": "./lib/npm-alias.js",
@@ -34,7 +34,7 @@
 	},
 	"scripts": {
 		"test": "cross-env Development=true node lib/npm-alias.js ra",
-		"postinstall": "node ./scripts/install.js"
+		"postinstall": "node scripts/install.js"
 	},
 	"bugs": {
 		"url": "https://github.com/RichieChoo/richiechoo/issues"
