@@ -23,9 +23,9 @@ if (
         `${package.name} has replace "${before}" to "${now}" automatically!`
       );
     } else {
-      console.warn(`${package.name} replace "${before}" to "${now}" fail!`);
+      throw new Error(err);
     }
   });
-}else{
-  console.log(`skipped ${package.name} scripts postinstall!`)
+} else {
+  console.log(`skipped ${package.name} scripts postinstall!`);
 }
